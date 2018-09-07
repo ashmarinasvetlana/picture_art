@@ -27,7 +27,7 @@ targetParent.addEventListener('click', () => {
 		document.body.style.overflow = 'hidden';
 
 	}
-	if (target.className == 'popup-close' || target.className == 'popup-content') {
+	if (target.className == 'popup-close' || target.className == 'popup-gift' || target.className == 'popup-design' || target.className == 'popup-consultation') {
 		document.body.style.overflow = '',
 		designModal.style.display = "none",
 		consultationModal.style.display = "none",
