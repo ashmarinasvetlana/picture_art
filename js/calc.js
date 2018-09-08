@@ -14,9 +14,12 @@ size.addEventListener('change', function () {
 	total = sizeSum + materialSum + optionsSum;
 	if (size.value === 'Выберите размер картины' || material.value === 'Выберите материал картины') {
 		totalValue.innerHTML = 'Для расчета нужно выбрать размер картины и материал картины';
-	} else {
-		totalValue.innerHTML = total;
-	}
+	} else 
+if (promo.value == 'IWANTPOPART') { 
+totalValue.innerHTML = total - (total * 0.3); 
+} else { 
+totalValue.innerHTML = total; 
+} 
 
 
 });
@@ -27,9 +30,12 @@ material.addEventListener('change', function () {
 	total = sizeSum + materialSum + optionsSum;
 	if (size.value === 'Выберите размер картины' || material.value === 'Выберите материал картины') {
 		totalValue.innerHTML = 'Для расчета нужно выбрать размер картины и материал картины';
-	} else {
-		totalValue.innerHTML = total;
-	}
+	} else 
+if (promo.value == 'IWANTPOPART') { 
+totalValue.innerHTML = total - (total * 0.3); 
+} else { 
+totalValue.innerHTML = total; 
+} 
 
 
 });
@@ -41,20 +47,12 @@ options.addEventListener('change', function () {
 	if (size.value === 'Выберите размер картины' || material.value === 'Выберите материал картины') {
 		totalValue.innerHTML = 'Для расчета нужно выбрать размер картины и материал картины';
 
-	} else {
-		totalValue.innerHTML = total;
-	}
+	} else 
+if (promo.value == 'IWANTPOPART') { 
+totalValue.innerHTML = total - (total * 0.3); 
+} else { 
+totalValue.innerHTML = total; 
+} 
 
 });
 
-
-promo.addEventListener('change', () => {
-	if (promo.value === 'IWANTPOPART') {
-		total = total - (total * 0.3);
-		totalValue.innerHTML = total;
-		promo.value = 'промокод использован';
-		promo.disabled = true;
-
-	}
-
-});
