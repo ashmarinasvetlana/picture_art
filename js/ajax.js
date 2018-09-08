@@ -8,7 +8,7 @@
 		input = submitParent.querySelectorAll('input'),
 		statusMessage = document.createElement('div');
 	statusMessage.classList.add('status');
-console.log(input);
+
 	submitParent.addEventListener('submit', function(event){
 		let target = event.target;
 		if (target.classList.contains('form') || target.tagName == 'FORM'){

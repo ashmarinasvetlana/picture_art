@@ -638,6 +638,8 @@ h4 {
   padding: 1rem 2rem;
   cursor: pointer;
 }
+
+
 .portfolio ul .active {
   border: 1px solid #c51abb;
   color: #c51abb;
@@ -1270,6 +1272,15 @@ h4 {
 	color: #c51abb;
 	display: flex;
 }
+  .hide {
+  display: none;
+}.show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 
 @media (max-width: 1399px) {
   .paints {
