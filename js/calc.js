@@ -52,7 +52,7 @@ promo.addEventListener('change', () => {
 	if (promo.value === 'IWANTPOPART') {
 		total = total - (total * 0.3);
 		totalValue.innerHTML = total;
-		setTimeout(promo.value = 'промокод использован', 3000);
+		promo.value = 'промокод использован';
 		promo.disabled = true;
 
 	}
