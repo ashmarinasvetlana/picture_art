@@ -26,7 +26,7 @@ function plusSlides(index) {
 
 	let slideInterval = setInterval(() => {
 		plusSlides(1);
-	}, 5000);
+	}, 3000);
 
 function currentSlide(index){
   showSlides(slideIndex = index);
